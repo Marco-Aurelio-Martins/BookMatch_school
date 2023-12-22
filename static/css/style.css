@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(52, 158, 182, 0.726);
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.263); 
+    background-color: white;
+}
+
+header img{
+    height: 180px;
+    width: auto;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+}
+
+
+main div.sobre{
+    color: white;
+    padding: 20px;
+    width: 650px;
+    max-width: 650px;
+
+}
+
+main div.sobre h1{
+    font-size: 50px;
+}
+
+main div.sobre p{
+    font-size: 35px;
+}
+
+main div.cadastro{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color:rgba(52, 158, 182, 0.726);
+}
+
+div.cadastro form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(52, 158, 182, 0.726);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+form label{
+    color:rgba(52, 158, 182, 0.726);
+    margin-top: 10px;
+}
+
+#entrar{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#entrar:hover{
+    background-color: rgba(52, 158, 182, 0.436);
+}
+
+/* FRAMES */
+
+@keyframes animacao{
+    0%{
+        background-color: white;
+        width: 0;
+
+    }
+    50%{
+        background-color: white;
+        width: 100%;
+        
+    }
+    100%{
+        background-color: white;
+        width: 0;
+    }
+}
+
+/* END MAIN */
