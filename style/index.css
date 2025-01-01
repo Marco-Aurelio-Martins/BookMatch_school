@@ -432,6 +432,12 @@ footer p {
     section .imagem {
         order: 2; /* Garante que a imagem venha depois */
     }
+
+    .superior > ul > li a, .superior > ul > li p {
+        font-size: 25px;
+    }
+
+    
 }
 
 /* Responsividade para tablets */
@@ -465,6 +471,9 @@ footer p {
     section .video{
         order: 2;
     }
+
+
+
 }
 
 /* Para telas grandes (Desktops) */
