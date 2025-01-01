@@ -64,7 +64,7 @@ header ul li a:hover {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +85,8 @@ header ul li a:hover {
     box-shadow: 0px 1px 7px 0px black;
     z-index: -1; /* Aplica o filtro abaixo do conteúdo */
     backdrop-filter: blur(5px); /* Aplica o desfoque com a cor */
-    -webkit-backdrop-filter: blur(5px); /* Compatibilidade com Safari */}
+    -webkit-backdrop-filter: blur(5px); /* Compatibilidade com Safari */
+}
 
 /* Título dentro da imagem */
 .fundo1 h1 {
@@ -98,7 +99,8 @@ header ul li a:hover {
 
 .fundo1 .contatos{
     display: flex;
-    gap: 30px;
+    gap: 80px;
+    margin-top: 25px;
 }
 
 .contatos a{
@@ -109,11 +111,10 @@ header ul li a:hover {
 
 .contatos a:hover{
     color: #f0eddb73;
-
 }
 
 .fundo1 i{
-    font-size: 40px;
+    font-size: 55px;
 }
 
 /* Sections */
@@ -127,7 +128,7 @@ main{
 div.centralizar{
     width: 90%;
     background-color: #1F6751;
-    box-shadow: 0px 0px 12px 3px black;;
+    box-shadow: 0px 0px 12px 3px black;
 }
 
 section#missao, #paraquem, #porque, #equipe, #premios {
@@ -153,13 +154,11 @@ section#conheca, #embreve{
 #embreve{
     margin-top: 150px;
     margin-bottom: 150px;
-
 }
-
 
 /* Para deixar a imagem redonda e bem posicionada */
 section img {
-    border-radius: 50%; /* Faz a imagem ficar redonda */
+    border-radius: 50%;
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -197,7 +196,6 @@ section#equipe .container{
     width: 80%;
 }
 
-
 #equipe section{
     width: 320px;
     height: 670px;
@@ -208,9 +206,8 @@ section#equipe .container{
     box-shadow: -1px 0px 8px 1px #0000007d;
 }
 
-
 #equipe section img {
-    transition: margin-top 0.3s, height 0.3s; /* Adicione transição suave */
+    transition: margin-top 0.3s, height 0.3s;
 }
 
 #equipe section.clicked img {
@@ -249,65 +246,62 @@ div.descricao{
 }
 
 .imagem {
-    position: relative; /* Para posicionar os elementos internamente */
+    position: relative;
 }
 
 .imagem div {
-    background-color: #f0eddb; /* Cor de fundo da div */
+    background-color: #f0eddb;
     height: 400px;
     width: 400px;
-    position: absolute; /* Necessário para colocar a div atrás */
-    top: 0; /* Alinhar com a parte superior da imagem */
-    left: 0; /* Alinhar com a parte esquerda da imagem */
-    z-index: 1; /* Nível inferior */
-    border-radius: 10px; /* Para combinar com o estilo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
     margin-left: 15px;
     margin-top: 15px;
 }
 
 #premios .imagem img {
     position: relative;
-    z-index: 2; /* Certifique-se de que a imagem está acima da div */
+    z-index: 2;
     border-radius: 10px;
     width: 400px;
     height: 400px;
-    object-fit: cover; /* Para manter a proporção da imagem */
+    object-fit: cover;
     box-shadow: 1px 1px 7px 0px black;
 }
 
 .video {
-    position: relative; /* Para posicionar os elementos internamente */
+    position: relative;
 }
 
 .video div {
-    background-color: #f0eddb; /* Cor de fundo da div */
+    background-color: #f0eddb;
     height: 530px;
     width: 300px;
-    position: absolute; /* Necessário para colocar a div atrás */
-    top: 0; /* Alinhar com a parte superior da imagem */
-    right: 0; /* Alinhar com a parte direita da imagem */
-    z-index: 1; /* Nível inferior */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
     margin-right: 25px;
     margin-top: 25px;
-
 }
 
 #premios .video video {
-    z-index: 2; /* Certifique-se de que a imagem está acima da div */
+    z-index: 2;
     position: relative;
     box-shadow: -1px 1px 7px 0px black;
-
 }
 
 /* Footer */
 
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-footer{
+footer {
     background-color: #131816;
     color: #f0eddb;
     box-shadow: 0px 1px 6px 1px black;
@@ -315,43 +309,178 @@ footer{
     z-index: 1;
 }
 
-div.superior{
+div.superior {
     display: flex;
     justify-content: space-around;
     width: 85%;
     padding: 50px 30px;
 }
 
-.superior>ul{
+.superior > ul {
     list-style: none;
 }
 
-.superior>ul>li{
+.superior > ul > li {
     display: flex;
     flex-direction: column;
 }
 
-.superior>ul>li a, .superior>ul>li p{
+.superior > ul > li a,
+.superior > ul > li p {
     text-decoration: none;
     padding: 10px 0px;
     font-size: 15px;
 }
 
-.superior>ul>li a:hover{
+.superior > ul > li a:hover {
     color: #f0eddbc7;
 }
 
-.superior>ul>li h3{
+.superior > ul > li h3 {
     font-weight: 600;
     font-size: 18px;
     padding: 0px 0px 15px 0px;
 }
 
-div.inferior{
+div.inferior {
     display: flex;
     width: 85%;
 }
- 
-footer a, footer p{
+
+footer a,
+footer p {
     color: #f0eddb;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    /* Ajuste no cabeçalho */
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    header img {
+        height: 120px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    /* Imagem de fundo */
+    .fundo1 {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    /* Ajuste das seções */
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section img {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    #equipe .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #equipe section {
+        width: 90%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    /* Footer ajustado */
+    footer {
+        padding: 30px 15px;
+    }
+
+    div.superior {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .superior > ul {
+        margin-bottom: 20px;
+    }
+
+
+    section .container {
+        order: 1; /* Garante que o texto ainda venha primeiro */
+    }
+
+    section .imagem {
+        order: 2; /* Garante que a imagem venha depois */
+    }
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    section#missao, #paraquem, #porque, #premios {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section#missao img, #paraquem img, #porque img, #premios img {
+        width: 300px;
+        height: 300px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    section .container {
+        order: 1; /* Garante que o texto ainda venha primeiro */
+    }
+
+    section .imagem {
+        order: 2; /* Garante que a imagem venha depois */
+    }
+
+    section .video{
+        order: 2;
+    }
+}
+
+/* Para telas grandes (Desktops) */
+@media (min-width: 1200px) {
+    header {
+        padding: 20px 80px;
+    }
+
+
+    section img {
+        width: 350px;
+        height: 350px;
+    }
+
+    #equipe section {
+        width: 320px;
+        height: 670px;
+    }
 }
