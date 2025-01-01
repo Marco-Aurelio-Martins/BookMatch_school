@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
 
 * {
     margin: 0;
@@ -70,7 +70,7 @@ header ul li a:hover {
     align-items: center;
     position: relative;
     flex-direction: column;
-    z-index: 1; /* Define o nível do fundo */
+    z-index: 1;
 }
 
 /* Filtro de brilho somente na imagem */
@@ -81,11 +81,11 @@ header ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);  /* Escurecer a imagem */
+    background: rgba(0, 0, 0, 0.6);  
     box-shadow: 0px 1px 7px 0px black;
-    z-index: -1; /* Aplica o filtro abaixo do conteúdo */
-    backdrop-filter: blur(5px); /* Aplica o desfoque com a cor */
-    -webkit-backdrop-filter: blur(5px); /* Compatibilidade com Safari */
+    z-index: -1;
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
 }
 
 /* Título dentro da imagem */
@@ -102,7 +102,7 @@ header ul li a:hover {
     gap: 120px;
     position: absolute;
     bottom: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .contatos a{
@@ -135,11 +135,9 @@ a#cadastrar{
 a#cadastrar:hover{
     color: #f0eddb;
     background-color: #0c2b21;
-
 }
 
 /* Sections */
-
 main{
     display: flex;
     flex-direction: column;
@@ -177,7 +175,6 @@ section#conheca, #embreve{
     margin-bottom: 150px;
 }
 
-/* Para deixar a imagem redonda e bem posicionada */
 section img {
     border-radius: 50%;
     width: 300px;
@@ -190,7 +187,6 @@ section img {
     flex: 1;
 }
 
-/* Títulos e textos dentro das sections */
 section h2 {
     font-size: 30px;
     margin-bottom: 15px;
@@ -202,7 +198,6 @@ section p {
 }
 
 /* Parte da equipe */
-
 section#equipe{
     flex-direction: column;
 }
@@ -316,12 +311,6 @@ div.descricao{
 }
 
 /* Footer */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 footer {
     background-color: #131816;
     color: #f0eddb;
@@ -375,7 +364,6 @@ footer p {
 
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
-    /* Ajuste no cabeçalho */
     header {
         flex-direction: column;
         padding: 15px;
@@ -400,13 +388,11 @@ footer p {
         padding: 10px 0;
     }
 
-    /* Imagem de fundo */
     .fundo1 {
         background-size: cover;
         background-position: center center;
     }
 
-    /* Ajuste das seções */
     section {
         flex-direction: column;
         text-align: center;
@@ -430,7 +416,6 @@ footer p {
         margin-bottom: 30px;
     }
 
-    /* Footer ajustado */
     footer {
         padding: 30px 15px;
     }
@@ -445,20 +430,17 @@ footer p {
         margin-bottom: 20px;
     }
 
-
     section .container {
-        order: 1; /* Garante que o texto ainda venha primeiro */
+        order: 1;
     }
 
     section .imagem {
-        order: 2; /* Garante que a imagem venha depois */
+        order: 2;
     }
 
     .superior > ul > li a, .superior > ul > li p {
         font-size: 25px;
     }
-
-    
 }
 
 /* Responsividade para tablets */
@@ -482,27 +464,25 @@ footer p {
     }
 
     section .container {
-        order: 1; /* Garante que o texto ainda venha primeiro */
+        order: 1;
     }
 
     section .imagem {
-        order: 2; /* Garante que a imagem venha depois */
+        order: 2;
     }
 
     section .video{
         order: 2;
     }
 
-
-
+    
 }
 
-/* Para telas grandes (Desktops) */
+/* Responsividade para telas grandes (Desktops) */
 @media (min-width: 1200px) {
     header {
         padding: 20px 80px;
     }
-
 
     section img {
         width: 350px;
