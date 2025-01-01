@@ -90,7 +90,7 @@ header ul li a:hover {
 
 /* Título dentro da imagem */
 .fundo1 h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: #f0eddb;
     text-align: center;
     padding: 20px;
@@ -99,8 +99,10 @@ header ul li a:hover {
 
 .fundo1 .contatos{
     display: flex;
-    gap: 80px;
-    margin-top: 25px;
+    gap: 120px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
 }
 
 .contatos a{
@@ -115,6 +117,25 @@ header ul li a:hover {
 
 .fundo1 i{
     font-size: 55px;
+}
+
+a#cadastrar{
+    text-decoration: none;
+    color: #0c2b21;
+    background-color: #f0eddb;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 15px;
+    transition: .5s;
+    box-shadow: 0px 4px 12px 1px black;
+}
+
+a#cadastrar:hover{
+    color: #f0eddb;
+    background-color: #0c2b21;
+
 }
 
 /* Sections */
@@ -176,7 +197,7 @@ section h2 {
 }
 
 section p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
